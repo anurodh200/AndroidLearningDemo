@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
+import android.util.Log
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.Button
@@ -33,13 +34,17 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btn.setOnClickListener {
-            val orderDetails = binding.et1.text.toString() + " " + binding.et2.text.toString() + " " + binding.et3.text + " " + binding.et4.text
 
-            intent = Intent(this, ShowOrder::class.java)
-            intent.putExtra(KEY, orderDetails)
-            startActivity(intent)
-        }
+
+        Log.i("INFO TAG", "Hey the code is perfect!!")
+
+//        binding.btn.setOnClickListener {
+//            val orderDetails = binding.et1.text.toString() + " " + binding.et2.text.toString() + " " + binding.et3.text + " " + binding.et4.text
+//            Log.i("INFO TAG", orderDetails.toString())
+//            intent = Intent(this, ShowOrder::class.java)
+//            intent.putExtra(KEY, orderDetails)
+//            startActivity(intent)
+//        }
 
 
 //        webBtn.setOnClickListener {
