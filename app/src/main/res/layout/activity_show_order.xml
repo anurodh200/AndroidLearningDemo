@@ -6,16 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".IntentScreen">
+    tools:context=".ShowOrder">
 
     <TextView
-        android:id="@+id/IntentText"
+        android:id="@+id/OrderDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
         android:layout_marginTop="100dp"
-        android:textSize="29dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         android:text="Hey"/>
 
