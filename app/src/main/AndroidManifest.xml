@@ -15,6 +15,12 @@
         android:theme="@style/Theme.Demo"
         tools:targetApi="31">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".signIn"
+            android:exported="false" />
+        <activity
             android:name=".signUp"
             android:exported="false" />
         <activity
@@ -31,8 +37,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

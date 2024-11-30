@@ -22,7 +22,6 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        app:startIconDrawable="@drawable/baseline_person_24"
         app:helperText="*Required"
         app:helperTextTextColor="#4B2B2B"
         android:layout_margin="20dp"
@@ -31,7 +30,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Name"
+            android:hint="Name"
             android:inputType="text"
             android:background="#38FF9800"
             android:id="@+id/etName"
@@ -41,7 +40,6 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        app:startIconDrawable="@drawable/baseline_person_24"
         app:helperText="*Required"
         app:helperTextTextColor="#4B2B2B"
         android:layout_margin="20dp"
@@ -50,7 +48,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Email"
+            android:hint="Email"
             android:inputType="textEmailAddress"
             android:background="#38FF9800"
             android:id="@+id/etEmail"
@@ -60,7 +58,6 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        app:startIconDrawable="@drawable/baseline_person_24"
         app:endIconMode="password_toggle"
         app:helperText="*Required"
         app:helperTextTextColor="#4B2B2B"
@@ -70,7 +67,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Password"
+            android:hint="Password"
             android:inputType="textPassword"
             android:background="#38FF9800"
             android:id="@+id/etPassword"
@@ -80,7 +77,6 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        app:startIconDrawable="@drawable/baseline_person_24"
         app:helperText="*Required"
         app:helperTextTextColor="#4B2B2B"
         android:layout_margin="20dp"
@@ -89,7 +85,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Unique ID"
+            android:hint="Unique ID"
             android:inputType="text"
             android:background="#38FF9800"
             android:id="@+id/etID"
@@ -104,12 +100,22 @@
         android:layout_height="wrap_content"
         android:text="SignUp"
         android:backgroundTint="#6EBDA64A"
-        /><ImageView
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSignIn"
+        android:layout_gravity="center"
+        android:text="If already registered, click Sign In"
+        />
+    <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/desi_bakery_favicon_color"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="10dp"
         />
+
+
 
 </LinearLayout>

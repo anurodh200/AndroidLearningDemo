@@ -2,6 +2,7 @@ package com.example.demo
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputEditText
 import androidx.appcompat.app.AppCompatActivity
@@ -46,9 +47,15 @@ class signUp : AppCompatActivity() {
                 etPassword.text?.clear()
                 etID.text?.clear()
                 Toast.makeText(this, "User Registered", Toast.LENGTH_SHORT).show()
-            }.addOnSuccessListener {
+            }.addOnFailureListener {
                 Toast.makeText(this, "Failed Registration", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        val signInTxt = findViewById<TextView>(R.id.txtSignIn)
+        signInTxt.setOnClickListener {
+            val openActivity = android.content.Intent(this, signIn::class.java)
+            startActivity(openActivity)
         }
     }
 }
